@@ -55,8 +55,42 @@ class FHP:
                     else:
                          # Randomly rotate clockwise or anti-clockwise
                         r = N.random(0,1)
-                        if r<0.5:
-                         n_cell
+                        if r<0.5: 
+                            self.turn_anticlock()
+                        else:
+                            self.turn_clock()
+                            # n_cell = nodes[i,j,]
+                        
+                    # Collisions along walls - actually, do wrap
                     
-            
+                    # Should have already set up new lattice for
+                    # next time step. nodes_update?
+                    
+# propagate particles 
 
+            # Get occupancy and coords for each node 
+            
+            # propagate in 1-d direction 
+            
+            # now in 2-d 
+            
+            # and so on for all 6 
+            
+# Subdivide and coarse-grain 
+
+            # Vectors for coarse-grained velocities 
+            
+# Iterate and store 
+
+# Plot average velocity field, flow, density etc 
+# Highlight 'damaging winds'
+
+# How to introduce the following
+# Stochasticity for 1000s of runs
+# How to do 2- or 3-level 
+# Vorticity or swirl ratio? 
+# Plots 
+# How to create ICs and LBCs from NWP output
+# Wrapping the boundaries             
+# Testing resolution and domain size and density
+# Velocity multiplier? 
